@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Value Realization Copilot</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">ENTERPRISE AI VALUE REALIZATION</div>
+        <h1>From AI adoption to measurable enterprise value.</h1>
+        <p class="lede">A portfolio-level ROI operating system for CFOs, CDAOs, CAIOs, transformation leaders, and investors.</p>
+      </div>
+      <div class="badge">OpenAI-powered executive reasoning</div>
+    </header>
+
+    <section class="hero-grid">
+      <div class="hero-card">
+        <div class="section-label">PORTFOLIO ECONOMICS</div>
+        <div class="metrics" id="metrics"></div>
+      </div>
+      <div class="hero-card thesis">
+        <div class="section-label">OPERATING THESIS</div>
+        <h2>AI potential ≠ AI value realized.</h2>
+        <p>Value only becomes real when adoption, confidence, operating cost, implementation cost, and execution risk are incorporated into the business case.</p>
+        <div class="flow">
+          <span>Adoption</span><b>→</b><span>Value</span><b>→</b><span>ROI</span><b>→</b><span>Capital allocation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div>
+        <strong>Scenario Portfolio</strong>
+        <span>Industry-agnostic examples. Edit any assumption below.</span>
+      </div>
+      <div class="actions">
+        <button class="secondary" id="resetBtn">Reset example</button>
+        <button class="primary" id="analyzeBtn">Generate Executive Readout</button>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <div class="table-wrap">
+        <table id="portfolioTable">
+          <thead>
+            <tr>
+              <th>Use Case</th><th>Function</th><th>Stage</th><th>Status</th>
+              <th>Adoption</th><th>Annual Volume</th><th>Benefit / Unit</th>
+              <th>Confidence</th><th>Platform Cost</th><th>Implementation Cost</th>
+              <th>Risk-Adj Benefit</th><th>Yr 1 ROI</th><th>Steady ROI</th>
+              <th>Payback</th><th>Priority</th><th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="portfolioBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="decision-grid">
+      <div class="panel">
+        <div class="section-label">PORTFOLIO SIGNALS</div>
+        <div id="signals"></div>
+      </div>
+      <div class="panel copilot">
+        <div class="section-label">OPENAI EXECUTIVE COPILOT</div>
+        <textarea id="question" rows="5">Give me a CFO/CDAO-ready readout: the 3 biggest economic insights, where value is leaking, what to scale vs optimize vs remediate, and which assumptions I should challenge.</textarea>
+        <button class="primary full" id="askBtn">Analyze Portfolio</button>
+        <div id="answer" class="answer">
+          <div class="placeholder">The executive narrative will appear here.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div><strong>AI Value Realization Copilot</strong> · Portfolio economics + executive reasoning</div>
+      <div>Illustrative model. Replace inputs with measured enterprise data.</div>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
