@@ -1,45 +1,63 @@
-# Featured item title
+# Featured title
 
-**AI Value Realization Copilot — From Adoption to ROI to Capital Allocation**
+**Enterprise AI Model Economics | Frontier vs Open Weight vs Hybrid**
 
-## Featured item description
+# Featured description
 
-I built an industry-agnostic AI Value Realization Copilot to answer a question enterprise leaders increasingly face:
+I built an industry-agnostic model-strategy copilot for a question CDOs and CAIOs increasingly face: **which model belongs on which workload?**
 
-**Which AI investments are actually creating measurable value — and what should we fund next?**
+Rather than comparing models on token price alone, the prototype evaluates Frontier API, Open Weight / VPC, and Hybrid Routing against workload-level capability, latency, deployment control, human review, engineering/MLOps burden, implementation cost, and business value.
 
-The prototype combines portfolio economics with an OpenAI-powered executive reasoning layer. It models adoption, risk-adjusted benefits, implementation and platform cost, Year 1 ROI, steady-state ROI, payback, 3-year NPV, and portfolio priority.
+It calculates Year-1 TCO, effective cost per successful task, net value, ROI, and payback—then recommends a route only after it clears the workload's operating constraints.
 
-The AI layer then turns those metrics into a CFO/CDAO-ready readout: where value is concentrated, where adoption or cost is leaking, what should scale, what needs remediation, and which assumptions should be challenged before more capital is committed.
+The OpenAI reasoning layer turns those economics into an executive model-strategy readout: where frontier capability is worth paying for, where open-weight economics/control make sense, where hybrid routing creates value, and which assumptions should be challenged before standardizing the enterprise AI stack.
 
-My core thesis: **AI potential is not AI value realized.** The operating discipline is connecting adoption → measurable business outcomes → economics → capital allocation.
+**My thesis: the enterprise decision isn't frontier vs open weight. It's workload segmentation.**
 
-All example data is illustrative.
+All public demo assumptions are illustrative.
 
-## LinkedIn post
+# LinkedIn post
 
-Enterprise AI has an ROI problem — but I don't think the problem is simply calculating ROI.
+Enterprise AI model strategy is becoming an economics problem—not just a benchmark problem.
 
-The harder problem is connecting:
+The question isn't simply:
 
-**Adoption → measurable business outcomes → economics → capital allocation**
+**Frontier or open weight?**
 
-So I built an industry-agnostic **AI Value Realization Copilot**.
+The more useful question is:
 
-It lets an enterprise model a portfolio of AI use cases across functions, then calculates risk-adjusted benefit, Year 1 ROI, steady-state ROI, payback, 3-year NPV, adoption leakage, and portfolio priority.
+**Which model belongs on which workload—and why?**
 
-The OpenAI layer turns that data into an executive decision memo:
+So I rebuilt my AI value-realization prototype as an **Enterprise AI Model Economics & Routing Copilot**.
 
-- Where is value actually being realized?
-- Which use cases should scale?
-- Where are adoption and cost leaking value?
-- Which assumptions should a CFO challenge?
-- Where should the next dollar of AI investment go?
+For each workload, it evaluates three routes:
 
-The underlying thesis is simple:
+- Frontier API
+- Open Weight / VPC
+- Hybrid Routing
 
-**AI potential ≠ AI value realized.**
+But the engine doesn't simply pick the cheapest inference option.
 
-Value becomes real when adoption, confidence, operating cost, implementation cost, and execution risk are incorporated into the business case.
+A route first has to clear the workload's **capability, latency, and control requirements**.
 
-All example data is illustrative.
+Then it compares total economics:
+
+- model / compute cost
+- human review
+- engineering & MLOps
+- implementation cost
+- Year-1 TCO
+- effective cost per successful task
+- net business value
+- ROI
+- payback
+
+The OpenAI layer then translates those results into a CDO/CAIO-ready model strategy.
+
+The thesis behind it:
+
+**Model strategy = workload segmentation.**
+
+Some workloads justify frontier capability. Some are economically better suited to open-weight infrastructure. And for many enterprise portfolios, the answer may be intelligent routing between both.
+
+All public assumptions are illustrative.

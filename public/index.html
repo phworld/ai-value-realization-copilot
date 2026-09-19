@@ -3,83 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI Value Realization Copilot</title>
+  <title>Enterprise AI Model Economics</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="shell">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">ENTERPRISE AI VALUE REALIZATION</div>
-        <h1>From AI adoption to measurable enterprise value.</h1>
-        <p class="lede">A portfolio-level ROI operating system for CFOs, CDAOs, CAIOs, transformation leaders, and investors.</p>
-      </div>
-      <div class="badge">OpenAI-powered executive reasoning</div>
-    </header>
+<div class="shell">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">ENTERPRISE AI MODEL STRATEGY</div>
+      <h1>Which model belongs on which workload?</h1>
+      <p class="lede">A workload-level economics engine for Frontier APIs, Open Weight / VPC, and Hybrid Routing.</p>
+    </div>
+    <div class="badge">OpenAI-powered CDO / CAIO reasoning</div>
+  </header>
 
-    <section class="hero-grid">
-      <div class="hero-card">
-        <div class="section-label">PORTFOLIO ECONOMICS</div>
-        <div class="metrics" id="metrics"></div>
-      </div>
-      <div class="hero-card thesis">
-        <div class="section-label">OPERATING THESIS</div>
-        <h2>AI potential ≠ AI value realized.</h2>
-        <p>Value only becomes real when adoption, confidence, operating cost, implementation cost, and execution risk are incorporated into the business case.</p>
-        <div class="flow">
-          <span>Adoption</span><b>→</b><span>Value</span><b>→</b><span>ROI</span><b>→</b><span>Capital allocation</span>
-        </div>
-      </div>
-    </section>
+  <section class="thesis card">
+    <div>
+      <div class="section-label">OPERATING THESIS</div>
+      <h2>The decision is not “frontier vs open weight.” It is workload segmentation.</h2>
+      <p>Route each workload to the lowest-total-cost architecture that still clears its capability, latency, and control requirements.</p>
+    </div>
+    <div class="flow"><span>Workload</span><b>→</b><span>Constraints</span><b>→</b><span>Model Route</span><b>→</b><span>Economics</span><b>→</b><span>Business Value</span></div>
+  </section>
 
-    <section class="toolbar">
-      <div>
-        <strong>Scenario Portfolio</strong>
-        <span>Industry-agnostic examples. Edit any assumption below.</span>
-      </div>
-      <div class="actions">
-        <button class="secondary" id="resetBtn">Reset example</button>
-        <button class="primary" id="analyzeBtn">Generate Executive Readout</button>
-      </div>
-    </section>
+  <section class="metrics" id="metrics"></section>
 
-    <section class="table-card">
-      <div class="table-wrap">
-        <table id="portfolioTable">
-          <thead>
-            <tr>
-              <th>Use Case</th><th>Function</th><th>Stage</th><th>Status</th>
-              <th>Adoption</th><th>Annual Volume</th><th>Benefit / Unit</th>
-              <th>Confidence</th><th>Platform Cost</th><th>Implementation Cost</th>
-              <th>Risk-Adj Benefit</th><th>Yr 1 ROI</th><th>Steady ROI</th>
-              <th>Payback</th><th>Priority</th><th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="portfolioBody"></tbody>
-        </table>
-      </div>
-    </section>
+  <section class="toolbar card">
+    <div><strong>Workload Portfolio</strong><span>Edit the assumptions to stress-test routing decisions.</span></div>
+    <div class="actions"><button class="secondary" id="resetBtn">Reset Example</button><button class="primary" id="readoutBtn">Generate Executive Readout</button></div>
+  </section>
 
-    <section class="decision-grid">
-      <div class="panel">
-        <div class="section-label">PORTFOLIO SIGNALS</div>
-        <div id="signals"></div>
-      </div>
-      <div class="panel copilot">
-        <div class="section-label">OPENAI EXECUTIVE COPILOT</div>
-        <textarea id="question" rows="5">Give me a CFO/CDAO-ready readout: the 3 biggest economic insights, where value is leaking, what to scale vs optimize vs remediate, and which assumptions I should challenge.</textarea>
-        <button class="primary full" id="askBtn">Analyze Portfolio</button>
-        <div id="answer" class="answer">
-          <div class="placeholder">The executive narrative will appear here.</div>
-        </div>
-      </div>
-    </section>
+  <section class="table-card card">
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Workload</th><th>Monthly Tasks</th><th>Value / Success</th><th>Required Success</th><th>Latency SLA</th><th>Control Required</th>
+          <th>Frontier</th><th>Open Weight</th><th>Hybrid</th><th>Recommended Route</th><th>Net Value</th><th>ROI</th><th>Cost / Success</th>
+        </tr></thead>
+        <tbody id="body"></tbody>
+      </table>
+    </div>
+  </section>
 
-    <footer>
-      <div><strong>AI Value Realization Copilot</strong> · Portfolio economics + executive reasoning</div>
-      <div>Illustrative model. Replace inputs with measured enterprise data.</div>
-    </footer>
-  </div>
-  <script src="/app.js"></script>
+  <section class="decision-grid">
+    <div class="panel card">
+      <div class="section-label">ROUTING SIGNALS</div>
+      <div id="signals"></div>
+      <div class="legend"><span class="dot frontier"></span> Frontier API <span class="dot open"></span> Open Weight / VPC <span class="dot hybrid"></span> Hybrid Routing</div>
+    </div>
+    <div class="panel card copilot">
+      <div class="section-label">OPENAI MODEL-STRATEGY COPILOT</div>
+      <textarea id="question" rows="6">Give me a CDO/CAIO-ready readout: which workloads deserve frontier capability, which belong on open weight, where hybrid routing creates value, and which assumptions should I challenge before standardizing the platform strategy?</textarea>
+      <button class="primary full" id="askBtn">Analyze Model Portfolio</button>
+      <div id="answer" class="answer"><div class="placeholder">Executive analysis will appear here.</div></div>
+    </div>
+  </section>
+
+  <section class="method card">
+    <div class="section-label">DECISION LOGIC</div>
+    <div class="method-grid">
+      <div><strong>1. Clear constraints</strong><span>Capability ≥ required success; latency ≤ SLA; control ≥ required level.</span></div>
+      <div><strong>2. Calculate true TCO</strong><span>Inference/compute + human review + engineering/MLOps + implementation.</span></div>
+      <div><strong>3. Compare value</strong><span>Successful tasks × business value per success − year-1 TCO.</span></div>
+      <div><strong>4. Route workload</strong><span>Choose the eligible architecture with the greatest modeled net value.</span></div>
+    </div>
+  </section>
+
+  <footer><div><strong>Enterprise AI Model Economics</strong> · Capability × Cost × Control × Business Value</div><div>Illustrative assumptions. Replace with evaluated model and infrastructure data.</div></footer>
+</div>
+<script src="/app.js"></script>
 </body>
 </html>

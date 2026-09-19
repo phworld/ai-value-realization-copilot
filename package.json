@@ -1,15 +1,8 @@
 {
-  "name": "ai-value-realization-copilot",
-  "version": "1.0.0",
+  "name": "enterprise-ai-model-economics",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.21.2",
-    "openai": "^4.86.1",
-    "xlsx": "^0.18.5"
-  }
+  "scripts": {"start": "node server.js", "dev": "node server.js"},
+  "dependencies": {"express": "^4.21.2", "openai": "^4.86.1"}
 }

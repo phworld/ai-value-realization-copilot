@@ -1,55 +1,81 @@
-# AI Value Realization Copilot
+# Enterprise AI Model Economics & Routing Copilot
 
-A public-facing, industry-agnostic enterprise AI ROI prototype designed to show how AI portfolio leaders can move from **adoption → realized value → ROI → capital allocation**.
+An industry-agnostic prototype for CDOs, CAIOs, CIOs, CTOs, CFOs, operating partners, and AI transformation leaders.
 
-## What the demo does
+## Core question
 
-- Models a cross-functional AI portfolio across Customer Operations, Engineering, Sales, Finance, Enterprise Knowledge, and Legal/Procurement.
-- Lets the user edit adoption, volume, benefit-per-unit, confidence, recurring platform cost, and implementation cost.
-- Recalculates:
-  - Risk-adjusted annual benefit
-  - Year 1 ROI
-  - Steady-state ROI
-  - Payback period
-  - 3-year NPV
-  - Portfolio priority score
-- Surfaces adoption gaps, payback risk, value concentration, and recommended portfolio actions.
-- Uses the OpenAI API to turn the calculated portfolio into a CFO/CDAO-ready executive narrative.
+**Which model belongs on which workload?**
+
+The app compares three enterprise deployment strategies at the workload level:
+
+1. Frontier API
+2. Open Weight / VPC
+3. Hybrid Routing
+
+The decision is deliberately **not** based on token or inference price alone. A route must first clear the workload's capability, latency, and control requirements. The model then compares total economics.
+
+## Economics modeled
+
+For every route:
+
+- Annual task volume
+- Expected task-success rate
+- Required task-success threshold
+- Latency vs SLA
+- Deployment/control fit
+- Variable model / compute cost
+- Human-review cost
+- Annual engineering / MLOps burden
+- Implementation cost
+- Year-1 TCO
+- Business value from successful tasks
+- Net annual value
+- ROI
+- Effective cost per successful task
+- Payback period
+
+The recommended route is the eligible route with the highest modeled net value. If no route clears all constraints, the UI flags that fact rather than pretending the cheapest route is acceptable.
+
+## OpenAI layer
+
+The OpenAI API receives the calculated portfolio economics and turns them into a CDO/CAIO-ready narrative covering:
+
+- Which workloads warrant frontier capability
+- Which are better fits for open-weight infrastructure
+- Where hybrid routing has the strongest economics
+- Which assumptions dominate the recommendation
+- What the portfolio means for enterprise AI platform strategy
+
+The prompt explicitly instructs the model not to invent missing data.
 
 ## Run locally
 
 ```bash
 npm install
 cp .env.example .env
-# Add your OpenAI API key to .env, then:
+# add OPENAI_API_KEY to .env
 export $(cat .env | xargs)
-npm run dev
+npm start
 ```
 
-Open http://localhost:3000
+Open `http://localhost:3000`.
 
-## Deploy
+## Render deployment
 
-Deploy this Node app on a service such as Render, Railway, Fly.io, or another Node-compatible host.
+- Build command: `npm install`
+- Start command: `npm start`
+- Health check: `/health`
+- Environment variable: `OPENAI_API_KEY`
+- Optional: `OPENAI_MODEL=gpt-5.6`
 
-Set environment variables:
+## Recommended demo sequence
 
-- `OPENAI_API_KEY`
-- `OPENAI_MODEL` (optional)
-- `PORT` is normally supplied by the host
+1. Open with: **“The enterprise decision isn't frontier versus open weight. It's workload segmentation.”**
+2. Point to the three hard gates: capability, latency, control.
+3. Change a workload's required success rate or control requirement.
+4. Show the recommended route change.
+5. Explain effective cost per successful task—not cost per token.
+6. Generate the OpenAI executive readout.
+7. Ask: **“Which assumptions should a CDO challenge before standardizing this model strategy?”**
 
-## LinkedIn demo flow
-
-1. Open with the thesis: **AI potential is not AI value realized.**
-2. Show the cross-functional portfolio and change one adoption assumption.
-3. Show how ROI, payback, and portfolio signals update immediately.
-4. Click **Generate Executive Readout**.
-5. Ask:  
-   `Which assumptions should a CFO challenge before funding this portfolio?`
-6. Close on the operating model: adoption → realized value → ROI → capital allocation.
-
-## Positioning
-
-This is deliberately industry agnostic. It is meant to demonstrate a repeatable operating model for enterprise AI value realization rather than a vertical-specific ROI calculator.
-
-All example values are illustrative.
+All example data is illustrative. Replace it with evaluated model performance, infrastructure costs, and enterprise workload data.
